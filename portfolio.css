@@ -191,6 +191,29 @@
     height: 40vh;
     color: #2f2f2f;
 }
+#card7{
+    background-image: url(./images/print_YT_copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--corAux);
+    border-radius: 20px;
+    width: 30vw;
+    height: 40vh;
+    color: white;
+}
+#card8{
+    background-image: url(./images/print_portifolio_contatos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: var(--corAux);
+    border-radius: 20px;
+    width: 30vw;
+    height: 40vh;
+    color: white;
+    cursor: default;
+}
 
 /*Contatos*/
 #contatos{
