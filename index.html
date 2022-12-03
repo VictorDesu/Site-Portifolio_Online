@@ -1,0 +1,159 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#2d2d2d" />
+        <title>Portfólio de Victor Fernandes</title>
+        <link href="./portfolio.css" rel="stylesheet">
+        <!--Materialize-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+
+    <body id="body">
+        <!--Navbar-->
+        <nav id="mainnav">
+            <ul>
+                <li onclick="scrollInicio()">Sobre mim</li>
+                <li onclick="scrollProjects()">Projetos</li>
+                <li onclick="scrollContatos()">Contatos</li>
+            </ul>
+            <div id="indicator"></div>
+        </nav>
+
+        <div class="container">
+            <!--Sobre mim-->
+            <div id="about">
+                <table>
+                    <td>
+                        <h2 class="title">Quem sou eu?</h2>
+                        <p>Olá! Meu nome é Victor Fernandes. Eu sou Designer e Desenvolvedor Web focado em front-end, a parte visual do site. Sou formado em Informática pelo 
+                        Instituto Federal de Minas Gerais, e atualmente estou me graduando no curso Bacharelado em Sistemas Digitais na mesma instituição.
+                        </p>
+                    </td>
+                    <td>
+                        <img src="./images/placeholder.png" alt="placeholder">
+                    </td>
+                </table>
+                <div class="divider" id="divider-about"></div>
+            </div>
+
+            <!--Projetos-->
+            <div id="projects-grid">
+                <h1 id="projects-title">Conheça alguns dos meus projetos</h1>
+                <a href="https://www.figma.com/file/5bN37vGhxnnUexreHrDx7V/Site-Indica-L%C3%A1-na-Firma?node-id=0%3A1&t=vMf4vPqG3EWRK3It-1" target="_blank">
+                    <div class="card" id="card1">
+                        <div id="comentario">
+                            <h3>Site Indica Lá na Firma</h3>
+                            <div class="container">
+                                <p>
+                                    O Indica Lá na Firma é um site de cadastro e procura de vagas de estágio e emprego,
+                                    desenvolvido como uma atividade do curso Bacharelado em Sistemas de Informação. A implementação ainda está em produção,
+                                    mas o design já pode ser visualizado clicando nesse card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.figma.com/file/ocIPAnUJP0n4FPXMRLi1hj/Design-restaurante-japon%C3%AAs?t=z3puQEYWvS2BTQXE-1" target="_blank">
+                    <div class="card" id="card2">
+                        <div id="comentario">
+                            <h3>Restaurante Japonês</h3>
+                            <div class="container">
+                                <p>
+                                    Esse é o design de um app mobile de um restaurante japonês fictício, criado como atividade para um curso de design.
+                                    Para visualizar o design completo, clique no card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.figma.com/file/0kVGDA01ypgZS06oT4ZaAG/Redesign-tela-de-login-e-cadastro-do-Facebook?t=z3puQEYWvS2BTQXE-1" target="_blank">
+                    <div class="card" id="card3">
+                        <div id="comentario">
+                            <div class="container">
+                                <h3>Redesign da tela de login do Facebook</h3>
+                                <p>
+                                    Esse é um redesign da tela de login do site Facebook, feito como atividade para um curso de design.
+                                    Para visualizar o design completo, clique no card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.figma.com/file/sSfap0oSpiu5oF1X5s24dU/Telas-WhatsApp?node-id=0%3A1&t=z3puQEYWvS2BTQXE-1" target="_blank">
+                    <div class="card" id="card4">
+                        <div id="comentario">
+                            <div class="container">
+                                <h3>Remake das telas do WhatsApp</h3>
+                                <p>
+                                    Esse é um remake das telas do app mobile WhatsApp, feito para treinar alguns princípios de design e como
+                                    atividade para um curso de design.
+                                    Para visualizar o design completo, clique no card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.figma.com/file/xMHfsw2HLYBZaTm8j8LXb4/Atividade-Landing-Page---Curso-UX?node-id=0%3A1&t=z3puQEYWvS2BTQXE-1" target="_blank">
+                    <div class="card" id="card5">
+                        <div id="comentario">
+                            <div class="container">
+                                <h3>Design de Site Institucional</h3>
+                                <p>
+                                    Esse é um design de um site institucional, da empresa de coaching fictícia "Academia do Coaching", feito como
+                                    atividade para um curso de design.
+                                    Para visualizar o design completo, clique no card.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card" id="card6" onclick="scrollContatos()">
+                    <div id="comentario">
+                        <div class="container">
+                            <h3>Espaço reservado</h3>
+                            <p>
+                                Esse espaço está reservado para um trabalho futuro. Quer que seu design apareça aqui? Entre em contato agora mesmo
+                                na área "Contatos". Clique no card para ir até ela.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider" id="divider-projects"></div>
+
+            <!--Contatos-->
+            <div id="contatos">
+                <h1>Contatos</h1>
+                <div id="Insta">
+                    <a href="https://www.instagram.com/victor20e10/" target="_blank">
+                        <img class="contorno_animado" src="./icons/icon-insta.png" alt="placeholder">
+                    </a>
+                    <h2 class="title">Instagram</h2>
+                    <p>@victor20e10</p>
+                </div>
+                <div id="WhatsApp">
+                    <img class="contorno_animado" src="./icons/icon-zap.png" alt="placeholder">
+                    <h2 class="title">WhatsApp</h2>
+                    <p>(31)99824-3392</p>
+                </div>
+                <div id="GitHub">
+                    <a href="https://github.com/VictorDesu" target="_blank">
+                        <img class="contorno_animado" src="./icons/icon-github.png" alt="placeholder">
+                    </a>
+                    <h2 class="title">GitHub</h2>
+                    <p>VictorDesu</p>
+                </div>
+                <div id="Linkedin">
+                    <a href="https://www.linkedin.com/in/victor-fernandes-9286a8238/" target="_blank">
+                        <img class="contorno_animado2" src="./icons/icon-linkedin.png" alt="placeholder">
+                    </a>
+                    <h2 class="title">Linkedin</h2>
+                    <p>Victor Fernandes</p>
+                </div>
+            </div>
+        </div>
+        <script src="./portfolio.js" type="text/javascript"></script>
+    </body>
+</html>
