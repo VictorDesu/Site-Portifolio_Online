@@ -190,6 +190,7 @@
     width: 30vw;
     height: 40vh;
     color: #2f2f2f;
+    cursor: default;
 }
 #card7{
     background-image: url(./images/print_YT_copy.png);
